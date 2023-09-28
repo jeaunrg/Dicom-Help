@@ -43,20 +43,13 @@ SQ (0040, a730)         ContentSequence(1)```
 ```
 - A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing 'Sequences' and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
 
-- A **Sequence** is a list of Dataset, e.g: ContentSequence(5)
-```e.g:
-SQ (0040, a043)         ConceptNameCodeSequence(1)
-SH (0008, 0100)                 CodeValue                                       121049
-SH (0008, 0102)                 CodingSchemeDesignator                          DCM
-LO (0008, 0104)                 CodeMeaning                                     Language of Content Item and Descendants
-```
-
 - An **Element** has multiple attributes (as seen in the previous example):
   * Value representation
   * Tag
   * Description
   * Value
-``` e.g: 
+```
+e.g: 
 SH (0008, 0100)                 CodeValue                                       eng
 ```
 
@@ -64,10 +57,20 @@ SH (0008, 0100)                 CodeValue                                       
   * RelationshipType, *describing the relationship with its parent Dataset
   * ValueType, *describing the type of value represented
   * ConceptNameCodeSequence, *describing the name of the concept
-``` e.g:
+```
+e.g:
 SH (0008, 0100)                 CodeValue                                       eng
 SH (0008, 0102)                 CodingSchemeDesignator                          RFC5646
 LO (0008, 0104)                 CodeMeaning                                     English
+```
+
+- A **Sequence** is a list of Dataset, e.g: ContentSequence(5)
+```
+e.g:
+SQ (0040, a043)         ConceptNameCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       121049
+SH (0008, 0102)                 CodingSchemeDesignator                          DCM
+LO (0008, 0104)                 CodeMeaning                                     Language of Content Item and Descendants
 ```
  
 ### NEMA (DICOM Standards)
