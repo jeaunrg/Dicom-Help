@@ -12,17 +12,6 @@ The examples you will see have been implemented using pydicom.
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Element Structures
 - A DICOM is referred to as a 'Dataset' in pydicom. A Dataset is an object containing 'Elements' and 'Sequences,' which are simply lists of sub-Datasets.
-To generate a DICOM with pydicom:
-```
-from pydicom import Dataset
-
-dcm = Dataset()
-sub_dataset = Dataset()
-dcm.ContentSequence = [sub_dataset]
-dcm.is_implicit_VR = False
-dcm.is_little_endian = True
-dcm.save_as("dicom.dcm")
-```
 ### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
