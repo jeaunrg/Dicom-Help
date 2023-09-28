@@ -41,18 +41,35 @@ SH (0008, 0102)                 CodingSchemeDesignator                          
 LO (0008, 0104)                 CodeMeaning                                     English
 SQ (0040, a730)         ContentSequence(1)```
 ```
-- A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing **Sequences** (e.g: ContentSequence(5))- which are simply lists of sub-Datasets - and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
+- A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing 'Sequences' and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
+
+- A **Sequence** is a list of Dataset, e.g: ContentSequence(5)
+e.g:
+```
+SQ (0040, a043)         ConceptNameCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       121049
+SH (0008, 0102)                 CodingSchemeDesignator                          DCM
+LO (0008, 0104)                 CodeMeaning                                     Language of Content Item and Descendants
+```
 
 - An **Element** has multiple attributes (as seen in the previous example):
-  * Value representation, *e.g., LO*
-  * Tag, *e.g., (0008, 0104)*
-  * Description, *e.g., CodeMeaning*
-  * Value, *e.g., English*
+  * Value representation
+  * Tag
+  * Description
+  * Value
+e.g: ```SH (0008, 0100)                 CodeValue                                       eng```
 
 - A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements/Sequences:
-  * RelationshipType, *describing the relationship with its parent Dataset, e.g., "HAS CONCEPT MOD"*
-  * ValueType, *describing the type of value represented, e.g., "CODE"*
-  * ConceptNameCodeSequence, *describing the name of the concept, e.g., (121049, DCM, Language of Content Item and Descendants)*
+  * RelationshipType, *describing the relationship with its parent Dataset
+  * ValueType, *describing the type of value represented
+  * ConceptNameCodeSequence, *describing the name of the concept
+e.g:
+```
+SH (0008, 0100)                 CodeValue                                       eng
+SH (0008, 0102)                 CodingSchemeDesignator                          RFC5646
+LO (0008, 0104)                 CodeMeaning                                     English
+```
+ 
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Table Structures
