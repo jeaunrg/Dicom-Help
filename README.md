@@ -82,6 +82,9 @@ LO (0008, 0104)                 CodeMeaning                                     
 
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
+The most challenging part is understanding how to read the specifications, i.e., the standards for creating Elements, Sequences, and Datasets.
+So I will try to explain to you how to understand specification tables with concrete examples.
+
 ### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
