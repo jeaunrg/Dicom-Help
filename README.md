@@ -53,17 +53,6 @@ e.g:
 SH (0008, 0100)                 CodeValue                                       eng
 ```
 
-- A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements/Sequences:
-  * RelationshipType, *describing the relationship with its parent Dataset
-  * ValueType, *describing the type of value represented
-  * ConceptNameCodeSequence, *describing the name of the concept
-```
-e.g:
-SH (0008, 0100)                 CodeValue                                       eng
-SH (0008, 0102)                 CodingSchemeDesignator                          RFC5646
-LO (0008, 0104)                 CodeMeaning                                     English
-```
-
 - A **Sequence** is a list of Dataset, e.g: ContentSequence(5)
 ```
 e.g:
@@ -72,7 +61,25 @@ SH (0008, 0100)                 CodeValue                                       
 SH (0008, 0102)                 CodingSchemeDesignator                          DCM
 LO (0008, 0104)                 CodeMeaning                                     Language of Content Item and Descendants
 ```
- 
+
+ - A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements/Sequences:
+  * RelationshipType, *describing the relationship with its parent Dataset
+  * ValueType, *describing the type of value represented
+  * ConceptNameCodeSequence, *describing the name of the concept
+```
+e.g:
+CS (0040, a010)         RelationshipType                                HAS CONCEPT MOD
+CS (0040, a040)         ValueType                                       CODE
+SQ (0040, a043)         ConceptNameCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       113011
+SH (0008, 0102)                 CodingSchemeDesignator                          DCM
+LO (0008, 0104)                 CodeMeaning                                     Document Title Modifier
+SQ (0040, a168)         ConceptCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       CHESTCT0304
+SH (0008, 0102)                 CodingSchemeDesignator                          99SHSAIRC
+LO (0008, 0104)                 CodeMeaning                                     AI-Rad CT Cardio
+```
+
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Table Structures
