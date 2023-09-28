@@ -40,7 +40,7 @@ SQ (0040, a730)         ContentSequence(1)```
 ```
 
 The examples you will see have been implemented using pydicom.
-(
+
 ## Tools for Understanding DICOMs
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
