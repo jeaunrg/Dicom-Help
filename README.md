@@ -6,20 +6,25 @@ From my perspective, DICOM visualization tools are not easily understandable for
 
 Les exemples que vous verrez ont été implémentés avec pydicom
 
+## Les outils pour comprendre les dicoms
+### NEMA dicom.nema.org 
+https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html
 ## Les différents types de dicoms
-## Base Dicom
-
+### Base Dicom
 ### Secondary capture
 #### Multiframe
 #### Image compression
-
 ### Structured Report 
 According to the NEMA TID 1501 standards
 #### Qualitative primitive
 #### Measurement primitive
 #### Location primitive
 #### Location primitive
-
 ### GSPS
-
 ### Encapsulated PDF
+
+## Comprendre la norme TID 1501
+### Structure des tableaux
+### structures des elements
+
+
