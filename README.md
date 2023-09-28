@@ -52,7 +52,7 @@ SQ (0040, a730)         ContentSequence(1)```
   * Description, *e.g., CodeMeaning*
   * Value, *e.g., English*
 
-- A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements:
+- A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements/Sequences:
   * RelationshipType, *describing the relationship with its parent Dataset, e.g., "HAS CONCEPT MOD"*
   * ValueType, *describing the type of value represented, e.g., "CODE"*
   * ConceptNameCodeSequence, *describing the name of the concept, e.g., (121049, DCM, Language of Content Item and Descendants)*
