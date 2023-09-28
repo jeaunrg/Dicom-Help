@@ -37,6 +37,7 @@ SH (0008, 0100)                 CodeValue                                       
 SH (0008, 0102)                 CodingSchemeDesignator                          RFC5646
 LO (0008, 0104)                 CodeMeaning                                     English
 SQ (0040, a730)         ContentSequence(1)```
+```
 
 The examples you will see have been implemented using pydicom.
 (
