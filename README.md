@@ -41,9 +41,6 @@ SH (0008, 0102)                 CodingSchemeDesignator                          
 LO (0008, 0104)                 CodeMeaning                                     English
 SQ (0040, a730)         ContentSequence(1)```
 ```
-### NEMA (DICOM Standards)
-[https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
-### Element Structures
 - A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing **Sequences** (which are simply lists of sub-Datasets) and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
 
 - An **Element** has multiple attributes (as seen in the previous example):
@@ -56,6 +53,8 @@ SQ (0040, a730)         ContentSequence(1)```
   * RelationshipType, *describing the relationship with its parent Dataset, e.g., "HAS CONCEPT MOD"*
   * ValueType, *describing the type of value represented, e.g., "CODE"*
   * ConceptNameCodeSequence, *describing the name of the concept, e.g., (121049, DCM, Language of Content Item and Descendants)*
+### NEMA (DICOM Standards)
+[https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
