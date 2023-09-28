@@ -5,6 +5,9 @@ A beginner's guide to understand the contents of DICOM files, enabling them to r
 From my perspective, DICOM visualization tools are not easily understandable for humans, and tools for creating various types of DICOMs deserve straightforward explanations. I've spent too much time trying to grasp the metadata structure of DICOM files, so I hope this brief guide can assist you in understanding their workings more quickly.
 Certainly, here is the translation while maintaining the formatting:
 
+The examples you will see have been implemented using pydicom.
+
+## Tools for Understanding DICOMs
 Use the script `pretty_dcmdump.py` to see the structure of a dicom. Here is a sample:
 ```CS (0040, a491) CompletionFlag                                  COMPLETE
 CS (0040, a493) VerificationFlag                                UNVERIFIED
@@ -38,10 +41,6 @@ SH (0008, 0102)                 CodingSchemeDesignator                          
 LO (0008, 0104)                 CodeMeaning                                     English
 SQ (0040, a730)         ContentSequence(1)```
 ```
-
-The examples you will see have been implemented using pydicom.
-
-## Tools for Understanding DICOMs
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Element Structures
