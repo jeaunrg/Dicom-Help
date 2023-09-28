@@ -3,6 +3,7 @@ Simple function to pretty print any input dicom
 
 Usage
 ------
+pip install pydicom
 python pdcmdump.py path/to/your/dicom.dcm
 """
 import pydicom
