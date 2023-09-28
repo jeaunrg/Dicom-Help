@@ -44,7 +44,7 @@ SQ (0040, a730)         ContentSequence(1)```
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Element Structures
-- A **DICOM** object is referred to as a '**Dataset**.' A **Dataset** is an object containing '**Sequences**' (which are simply lists of sub-Datasets) and '**Elements**.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
+- A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing **Sequences** (which are simply lists of sub-Datasets) and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
 
 - An **Element** has multiple attributes (as seen in the previous example):
   * Value representation, *e.g., LO*
