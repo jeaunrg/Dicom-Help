@@ -1,3 +1,10 @@
+"""
+Simple function to pretty print any input dicom
+
+Usage
+------
+python pdcmdump.py path/to/your/dicom.dcm
+"""
 import pydicom
 import sys
 
