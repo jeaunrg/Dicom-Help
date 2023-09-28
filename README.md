@@ -44,16 +44,18 @@ SQ (0040, a730)         ContentSequence(1)```
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Element Structures
-- A DICOM is referred to as a 'Dataset' in pydicom. A Dataset is an object containing 'Sequences' (which are simply lists of sub-Datasets) and 'Elements'. In the previous example , lines which ends with "Sequence(n)" are Sequences of n datasets and the other lines are Elements.
-- An __Element__ have multiple arguments (see previous example)
-  * Value representation, *Ex: LO*
-  * tag, *Ex: (0008, 0104)*
-  * description, *Ex: CodeMeaning*
-  * value, *Ex: English*
-- A __Dataset__ is a "concept" in most of the case, so it is composed of these Elements:
-  * RelationshipType, *describe the relationship with its parent Dataset, ex: "HAS CONCEPT MOD"*
-  * ValueType, *describe the type of value represented, ex: "CODE"*
-  * ConceptNameCodeSequence, *describe the name of the concept, ex: (121049, DCM, Language of Content Item and Descendants)*
+- A **DICOM** object is referred to as a '**Dataset**.' A **Dataset** is an object containing '**Sequences**' (which are simply lists of sub-Datasets) and '**Elements**.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
+
+- An **Element** has multiple attributes (as seen in the previous example):
+  * Value representation, *e.g., LO*
+  * Tag, *e.g., (0008, 0104)*
+  * Description, *e.g., CodeMeaning*
+  * Value, *e.g., English*
+
+- A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements:
+  * RelationshipType, *describing the relationship with its parent Dataset, e.g., "HAS CONCEPT MOD"*
+  * ValueType, *describing the type of value represented, e.g., "CODE"*
+  * ConceptNameCodeSequence, *describing the name of the concept, e.g., (121049, DCM, Language of Content Item and Descendants)*
 ### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
