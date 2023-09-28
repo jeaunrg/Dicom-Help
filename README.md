@@ -10,13 +10,14 @@ Les exemples que vous verrez ont été implémentés avec pydicom
 ## Base Dicom
 
 ### Secondary capture
-#### single frame
-#### multiframe
+#### Multiframe
 #### Image compression
 
-### Structured Report
+### Structured Report 
+According to the NEMA TID 1501 standards
 #### Qualitative primitive
 #### Measurement primitive
+#### Location primitive
 #### Location primitive
 
 ### GSPS
