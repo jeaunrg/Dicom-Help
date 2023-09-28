@@ -41,7 +41,7 @@ SH (0008, 0102)                 CodingSchemeDesignator                          
 LO (0008, 0104)                 CodeMeaning                                     English
 SQ (0040, a730)         ContentSequence(1)```
 ```
-- A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing **Sequences** (which are simply lists of sub-Datasets) and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
+- A DICOM object is referred to as a 'Dataset.' A Dataset is an object containing **Sequences** (e.g: ContentSequence(5))- which are simply lists of sub-Datasets - and 'Elements.' In the previous example, lines ending with "Sequence(n)" represent Sequences of n datasets, while the other lines are Elements.
 
 - An **Element** has multiple attributes (as seen in the previous example):
   * Value representation, *e.g., LO*
