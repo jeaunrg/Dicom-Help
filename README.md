@@ -51,9 +51,9 @@ SQ (0040, a730)         ContentSequence(1)```
   * description, *Ex: CodeMeaning*
   * value, *Ex: English*
 - A __Dataset__ is a "concept" in most of the case, so it is composed of these Elements:
-  * RelationshipType, *describe the relationship with its parent Dataset*
-  * ValueType, *describe the type of value represented*
-  * ConceptNameCodeSequence, *describe the name of the concept*
+  * RelationshipType, *describe the relationship with its parent Dataset, ex: "HAS CONCEPT MOD"*
+  * ValueType, *describe the type of value represented, ex: "CODE"*
+  * ConceptNameCodeSequence, *describe the name of the concept, ex: (121049, DCM, Language of Content Item and Descendants)*
 ### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
