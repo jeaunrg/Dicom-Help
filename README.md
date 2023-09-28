@@ -46,10 +46,10 @@ SQ (0040, a730)         ContentSequence(1)```
 ### Element Structures
 - A DICOM is referred to as a 'Dataset' in pydicom. A Dataset is an object containing 'Elements' and 'Sequences,' which are simply lists of sub-Datasets. In the previous example , lines which ends with "Sequence(n)" are Sequences of n datasets and the other lines are Elements.
 - An Element have multiple arguments:
-* Value representation (ex: LO)
-* tag (ex: (0008, 0104))
-* description (ex: CodeMeaning)
-* value (ex: English)
+  * Value representation, Ex: LO
+  * tag, Ex: (0008, 0104)
+  * description, Ex: CodeMeaning
+  * value, Ex: English
   ### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
