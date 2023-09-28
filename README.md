@@ -18,9 +18,11 @@ The examples you will see have been implemented using pydicom.
 from pydicom import Dataset
 
 dcm = Dataset()
-dcm.ValueType = "CONTAINER"
 sub_dataset = Dataset()
 dcm.ContentSequence = [sub_dataset]
+dcm.is_implicit_VR = False
+dcm.is_little_endian = True
+dcm.save_as("dicom.dcm")
 ```
 ### Table Structures
 ### INNOLITICS (DICOM type browser)
