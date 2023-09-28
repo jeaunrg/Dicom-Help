@@ -5,7 +5,7 @@ A beginner's guide to understand the contents of DICOM files, enabling them to r
 From my perspective, DICOM visualization tools are not easily understandable for humans, and tools for creating various types of DICOMs deserve straightforward explanations. I've spent too much time trying to grasp the metadata structure of DICOM files, so I hope this brief guide can assist you in understanding their workings more quickly.
 Certainly, here is the translation while maintaining the formatting:
 
-Use the script `pretty_dcmdump.py` to see the structure of a dicom. Here is an sample:
+Use the script `pretty_dcmdump.py` to see the structure of a dicom. Here is a sample:
 ```CS (0040, a491) CompletionFlag                                  COMPLETE
 CS (0040, a493) VerificationFlag                                UNVERIFIED
 CS (0040, a496) PreliminaryFlag                                 FINAL
