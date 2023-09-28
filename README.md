@@ -5,8 +5,38 @@ A beginner's guide to understand the contents of DICOM files, enabling them to r
 From my perspective, DICOM visualization tools are not easily understandable for humans, and tools for creating various types of DICOMs deserve straightforward explanations. I've spent too much time trying to grasp the metadata structure of DICOM files, so I hope this brief guide can assist you in understanding their workings more quickly.
 Certainly, here is the translation while maintaining the formatting:
 
-Use the script pretty_dcmdump.py to see the structure of a dicom. Here is an sample:
-
+Use the script `pretty_dcmdump.py` to see the structure of a dicom. Here is an sample:
+```CS (0040, a491) CompletionFlag                                  COMPLETE
+CS (0040, a493) VerificationFlag                                UNVERIFIED
+CS (0040, a496) PreliminaryFlag                                 FINAL
+SQ (0040, a504) ContentTemplateSequence(1)
+CS (0008, 0105)         MappingResource                                 DCMR
+UI (0008, 0118)         MappingResourceUID                              1.2.840.10008.8.1.1
+CS (0040, db00)         TemplateIdentifier                              1500
+SQ (0040, a730) ContentSequence(5)
+1.1 -----------    1
+CS (0040, a010)         RelationshipType                                HAS CONCEPT MOD
+CS (0040, a040)         ValueType                                       CODE
+SQ (0040, a043)         ConceptNameCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       113011
+SH (0008, 0102)                 CodingSchemeDesignator                          DCM
+LO (0008, 0104)                 CodeMeaning                                     Document Title Modifier
+SQ (0040, a168)         ConceptCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       CHESTCT0304
+SH (0008, 0102)                 CodingSchemeDesignator                          99SHSAIRC
+LO (0008, 0104)                 CodeMeaning                                     AI-Rad CT Cardio
+1.2 -----------    2
+CS (0040, a010)         RelationshipType                                HAS CONCEPT MOD
+CS (0040, a040)         ValueType                                       CODE
+SQ (0040, a043)         ConceptNameCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       121049
+SH (0008, 0102)                 CodingSchemeDesignator                          DCM
+LO (0008, 0104)                 CodeMeaning                                     Language of Content Item and Descendants
+SQ (0040, a168)         ConceptCodeSequence(1)
+SH (0008, 0100)                 CodeValue                                       eng
+SH (0008, 0102)                 CodingSchemeDesignator                          RFC5646
+LO (0008, 0104)                 CodeMeaning                                     English
+SQ (0040, a730)         ContentSequence(1)```
 
 The examples you will see have been implemented using pydicom.
 (
