@@ -45,12 +45,16 @@ SQ (0040, a730)         ContentSequence(1)```
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Element Structures
 - A DICOM is referred to as a 'Dataset' in pydicom. A Dataset is an object containing 'Elements' and 'Sequences,' which are simply lists of sub-Datasets. In the previous example , lines which ends with "Sequence(n)" are Sequences of n datasets and the other lines are Elements.
-- An Element have multiple arguments (see previous example)
+- An __Element__ have multiple arguments (see previous example)
   * Value representation, Ex: LO
   * tag, Ex: (0008, 0104)
   * description, Ex: CodeMeaning
   * value, Ex: English
-  ### Table Structures
+- A __Dataset__ is a "concept" in most of the case, so it is composed of these Elements:
+  * RelationshipType, describe the relationship with its parent Dataset
+  * ValueType, describe the type of value represented
+  * ConceptNameCodeSequence, describe the name of the concept
+### Table Structures
 ### INNOLITICS (DICOM type browser)
 [https://dicom.innolitics.com/ciods](https://dicom.innolitics.com/ciods)
 # DCMTK
