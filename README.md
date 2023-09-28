@@ -13,7 +13,7 @@ The examples you will see have been implemented using pydicom.
 ### Element Structures
 - The DICOM file is divided into two parts: the file_meta and the body. 
 - A DICOM is referred to as a 'Dataset' in pydicom. A Dataset is an object containing 'Elements' and 'Sequences,' which are simply lists of sub-Datasets.
-- To generate a DICOM with pydicom:
+To generate a DICOM with pydicom:
 ```
 from pydicom import Dataset
 
