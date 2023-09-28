@@ -61,10 +61,10 @@ SH (0008, 0102)                 CodingSchemeDesignator                          
 LO (0008, 0104)                 CodeMeaning                                     Language of Content Item and Descendants
 ```
 
- - A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements/Sequences:
-  * RelationshipType, *describing the relationship with its parent Dataset
-  * ValueType, *describing the type of value represented
-  * ConceptNameCodeSequence, *describing the name of the concept
+- A **Dataset** is typically more of a conceptual entity, and it is composed of these Elements/Sequences:
+   * RelationshipType, *describing the relationship with its parent Dataset
+   * ValueType, *describing the type of value represented
+   * ConceptNameCodeSequence, *describing the name of the concept
 ```
 e.g:
 CS (0040, a010)         RelationshipType                                HAS CONCEPT MOD
