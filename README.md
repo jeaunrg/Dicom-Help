@@ -11,7 +11,6 @@ The examples you will see have been implemented using pydicom.
 ### NEMA (DICOM Standards)
 [https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html](https://dicom.nema.org/medical/dicom/current/output/chtml/part16/ps3.16.html)
 ### Element Structures
-- The DICOM file is divided into two parts: the file_meta and the body. 
 - A DICOM is referred to as a 'Dataset' in pydicom. A Dataset is an object containing 'Elements' and 'Sequences,' which are simply lists of sub-Datasets.
 To generate a DICOM with pydicom:
 ```
