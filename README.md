@@ -1,8 +1,2 @@
-<!-- DICOM HELP -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+# DICOM HELP
+A beginner's guide to understanding the contents of DICOM files, enabling them to understand, read, modify, and create them.
